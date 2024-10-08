@@ -18,6 +18,7 @@ header {
     background-color: #fff;
     padding: 20px 50px;
     border-bottom: 2px solid #ddd;
+    height: 70px;
 }
 
 footer {
@@ -28,19 +29,23 @@ footer {
     border-top: 2px solid #ddd;
 }
 .logo{
-    width: 200px;
+    width: 150px;
 }
 
 .ingresar-btn {
     color: #114232;
     border: solid 2px #114232;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     list-style: none;
 }
-
+a{
+    list-style: none;
+    text-decoration: none;
+}
+    
 .ingresar-btn:hover {
     background-color: #114232;
     color: white;
@@ -197,4 +202,53 @@ p {
     text-align: center;
     align-items: center;
     margin-top: 10px;
+}
+
+#map {
+    width: 600px;
+    height: 400px;
+}
+
+.map-container {
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    max-height: 700px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-left {
+    width: 70%;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    margin-left: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);    
+    overflow: hidden;
+}
+
+.map-right {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    margin-right: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);    
+    overflow: hidden;
+}
+
+.footer-der {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php
+    include("../../Controller/conexion.php");
+    include("../../Model/login.php");
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buenos Aires Map</title>
+    <title>EcoBA</title>
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
         #map {
-            width: 600px;
-            height: 400px;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            border: 2px solid #ddd;
         }
     </style>
 </head>
 <body>
-    <div id="map"></div>
+    <header>
+        <img src="../img/ECOBA.png" class="logo" alt="" srcset="">
+        <a href="../../index.php#" class="ingresar-btn">Logout</a>
+    </header>
+    <main>
+        <div class="map-container">
+            <div class="map-left">
+                <div id="map"></div>
+            </div>
+            <div class="map-right">
+            </div>
+        </div>
+    </main>
+    <footer>
 
+        <div class="footer-der">
+            <p>&copy; 2024 ECOBA. Todos los derechos reservados.</p>    
+        </div>
+    </footer>
+    
     <script>
         var map = L.map('map').setView([ -34.603722, -58.381592], 9);
 
